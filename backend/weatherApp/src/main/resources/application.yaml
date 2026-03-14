@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: bbiJ4pKS0uHqaVTl3Hn1wnx7VPiejYxw
+            client-secret: Mu_rHXUpEQ9NC1P5I2vf81y3xe5GgpZpojnI5oLeVEZzEIrCZ7xPrxjlNdBVrhBv
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            issuer-uri: https://dev-w7gxyrit2foli2im.us.auth0.com/
+
+server:
+  servlet:
+    session:
+      timeout: 1h

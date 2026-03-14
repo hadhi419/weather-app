@@ -8,7 +8,8 @@ public class WhitelistService {
             "arceers@fidenz.com",
             "other@company.com",
             "321mohomedhadhi@gmail.com",
-            "dev.hadhi419@gmail.com"
+            "dev.hadhi419@gmail.com",
+            "careers@fidenz.com"
     );
 
     public static boolean isAllowed(String email) {

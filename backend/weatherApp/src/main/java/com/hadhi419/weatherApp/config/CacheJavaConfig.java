@@ -12,7 +12,7 @@
         @Bean
         public CacheManager cacheManager()
         {
-          String specAsString = "initialCapacity=100,maximumSize=500,expireAfterAccess=30s,recordStats";
+          String specAsString = "initialCapacity=100,maximumSize=500,expireAfterAccess=5m,recordStats";
           CaffeineCacheManager cacheManager = new CaffeineCacheManager("weather");
           cacheManager.setCaffeine(Caffeine.from(specAsString));
           cacheManager.setAllowNullValues(false);
